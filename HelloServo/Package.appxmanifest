@@ -1,49 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
-<Package
-  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
-  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
-  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
-  IgnorableNamespaces="uap mp">
-
-  <Identity
-    Name="1bb9f0e1-e945-43ca-b352-d3d5598f09fc"
-    Publisher="CN=Smoky Desperado"
-    Version="1.0.0.0" />
-
-  <mp:PhoneIdentity PhoneProductId="1bb9f0e1-e945-43ca-b352-d3d5598f09fc" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
-
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp iot">
+  <Identity Name="1bb9f0e1-e945-43ca-b352-d3d5598f09fc" Publisher="CN=Smoky Desperado" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="1bb9f0e1-e945-43ca-b352-d3d5598f09fc" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>HelloServo</DisplayName>
     <PublisherDisplayName>Smoky Desperado</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
-
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
   </Dependencies>
-
   <Resources>
-    <Resource Language="x-generate"/>
+    <Resource Language="x-generate" />
   </Resources>
-
   <Applications>
-    <Application Id="App"
-      Executable="$targetnametoken$.exe"
-      EntryPoint="HelloServo.App">
-      <uap:VisualElements
-        DisplayName="HelloServo"
-        Square150x150Logo="Assets\Square150x150Logo.png"
-        Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="HelloServo"
-        BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="ClaptrapProject.App">
+      <uap:VisualElements DisplayName="ClaptrapProject" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="This claptrap project is our ECEN 361 final project.  Functionality includes movement, a webcam, and wireless connection through any Windows device with Windows 10 on it." BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
+        </uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape" />
+        </uap:InitialRotationPreference>
       </uap:VisualElements>
     </Application>
   </Applications>
-
   <Capabilities>
     <Capability Name="internetClient" />
+    <Capability Name="codeGeneration" />
+    <uap:Capability Name="musicLibrary" />
+    <uap:Capability Name="objects3D" />
+    <uap:Capability Name="appointments" />
+    <DeviceCapability Name="webcam" />
+    <DeviceCapability Name="location" />
+    <DeviceCapability Name="bluetooth" />
   </Capabilities>
 </Package>
