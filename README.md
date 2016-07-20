@@ -65,9 +65,6 @@ Windows IOT Core has the capability to upload apps onto the Raspberry Pi quite n
       * We then hot glued and zip tied the all the pieces together, we also then decided to have different layers within claptrap so we could have it organized and be able to move things around and replace parts as needed
       * We put all the wires on the lower level and the main components on the top, this made it so that we can get to the raspberry pi easily and the battery pack
 
-
-
-
 Video Links:
 This videos is an explanation of our project done by Mark.
 
@@ -88,7 +85,13 @@ https://drive.google.com/open?id=0B_jdokOkHsH4QVNpVnBaOVdUZ0E
 
 
 
-Conclusion: 
+##Conclusion 
+
+Overall, this project was challenging, but quite a lot of fun to work on.  
     
+
+###If I were to do this project again
+I would make more room for weight specifications.  Unfortunately, the servos and motors we ordered were a bit small for what we wanted them to do, and their performance was lacking.  By the video you can see that we have to hold the power supply for the robot to move forward; most of the parts were decently light, except for the wheel.
+
 
 
