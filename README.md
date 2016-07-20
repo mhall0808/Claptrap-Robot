@@ -87,11 +87,23 @@ https://drive.google.com/open?id=0B_jdokOkHsH4QVNpVnBaOVdUZ0E
 
 ##Conclusion 
 
-Overall, this project was challenging, but quite a lot of fun to work on.  
+###Pao 
+I feel that this was an impressive project, to be able to create a robot from scratch and to design it as we went along has been a great learning opportunity. Not only did I learn how to program a raspberry pi but to learn a little bit about Windows IoT core and how it function. Luckily I had Mark there to help clarify the parts and pieces that were confusing to me. The hardest thing in this project was getting it started for me, since I wasn’t sure on what I needed to do. I first propose that we could do this in python since I was informed by some students that it would be easier and simple to implement. But after doing this project I felt that it was better for us to use Windows IoT core and program in C# instead of python. 
+
+###Mark
+Overall, this project was challenging, but quite a lot of fun to work on.  We had a lot of bumps along the way, but in the end, things came together quite nicely.  Though Claptrap was only a foot tall, it is the same concept for any kind of robot.  For this, I am glad that we decided to go the more difficult route; in future careers, the road to discovery will not always be well documented, nor well laid out.  Perhaps we could have cut our time significantly with a pre-built chassis and a more cookie-cutter design, but where is the fun in that?
+
+The great thing is, after this class I can continue to update and work on my project.  Right now, there are a few kinks in it that I would love to work out a bit more.  That is part of the fun though; its creation is a constantly ongoing learning process, one that is actually not as expensive as it used to be.  As I explore my inner childhood, I am also building knowledge and allowing myself to learn more and more every day.  I feel like that is a win-win situation!
     
 
 ###If I were to do this project again
 I would make more room for weight specifications.  Unfortunately, the servos and motors we ordered were a bit small for what we wanted them to do, and their performance was lacking.  By the video you can see that we have to hold the power supply for the robot to move forward; most of the parts were decently light, except for the wheel.
 
+### To-Do List
+Going forward, these are the design changes that I would like to make:
+  * The servos require some time to move; about .5 seconds from one side to the other.  Unfortunately right now, there is no multithreaded movement.  Therefore, the whole program pauses momentarily while a movement is made.  Multithreading in IOT core is an ongoing learning process that I haven't quite mastered yet.
+  * I would love to implement sound in this project.  We already have purchased speakers, but thus far the only documentation I have found on playing wav files is a Stack Overflow post with four lines of code that seem to run without error, but don't play any sound successfully.  
+  * I am going to replace the servos and motors with higher capacity ones, as I quickly hit the weight limit.  Unfortunately, due to time constraints, we were unable to include larger motors in our final project.  However, this is a purchase that I will be making soon in order to make Claptrap run smoother.
+  * The design for Claptrap is simple, yet with 4 servos and 2 DC motors, as you can imagine, there are many wires running through the unit.  I would like to replace the wiring with a more permanent solution, allowing Claptrap to be able to take a tumble without fear of loosening parts on it.
 
 
