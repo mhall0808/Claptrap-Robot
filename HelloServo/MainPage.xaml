@@ -8,14 +8,23 @@
     mc:Ignorable="d" Height="652.667" Width="954">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,10,0,0" Height="633" VerticalAlignment="Top">
-        <Button x:Name="forward" Content="Forward" HorizontalAlignment="Left" Margin="385,293,0,0" VerticalAlignment="Top" Click="button_Click" Width="136" Height="63"/>
-        <Button x:Name="left" Content="Left" HorizontalAlignment="Left" Margin="293,293,0,0" VerticalAlignment="Top" Click="button1_Click" Width="87" Height="175"/>
-        <Button x:Name="right" Content="Right" HorizontalAlignment="Left" Margin="526,293,0,0" VerticalAlignment="Top" Click="button2_Click" Width="107" Height="175"/>
-        <Button x:Name="reverse" Content="Reverse" HorizontalAlignment="Left" Margin="385,398,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.155,0.188" Width="136" Height="70" Click="button3_Click"/>
-        <Button x:Name="stop" Content="STOP" HorizontalAlignment="Left" Margin="385,361,0,0" VerticalAlignment="Top" Width="136" Click="button4_Click"/>
-        <TextBlock x:Name="GpioStatus" HorizontalAlignment="Left" Margin="181,268,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="340"/>
-        <CaptureElement x:Name="capturePreview" Margin="293,20,321,365"/>
-        <Button x:Name="beginSession" Content="Begin Session" HorizontalAlignment="Left" Margin="638,79,0,0" VerticalAlignment="Top" Click="beginSession_Click"/>
+        <Button x:Name="forward" Content="Forward" HorizontalAlignment="Left" Margin="385,385,0,0" VerticalAlignment="Top" Click="button_Click" Width="136" Height="63" ClickMode="Press"/>
+        <Button x:Name="left" Content="Left" HorizontalAlignment="Left" Margin="293,385,0,0" VerticalAlignment="Top" Click="button1_Click" Width="87" Height="175" ClickMode="Press"/>
+        <Button x:Name="right" Content="Right" HorizontalAlignment="Left" Margin="526,385,0,0" VerticalAlignment="Top" Click="button2_Click" Width="107" Height="175" ClickMode="Press"/>
+        <Button x:Name="reverse" Content="Reverse" HorizontalAlignment="Left" Margin="385,490,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.155,0.188" Width="136" Height="70" Click="button3_Click" ClickMode="Press"/>
+        <Button x:Name="stop" Content="STOP" HorizontalAlignment="Left" Margin="385,453,0,0" VerticalAlignment="Top" Width="136" Click="button4_Click"/>
+        <CaptureElement x:Name="capturePreview" Margin="293,10,367,375"/>
+        <Button x:Name="beginSession" Content="Begin Session" HorizontalAlignment="Left" Margin="385,267,0,0" VerticalAlignment="Top" Click="beginSession_Click" Width="121"/>
+        <TextBlock x:Name="Left_Arm" HorizontalAlignment="Left" Margin="51,26,0,0" TextWrapping="Wrap" Text="Left Arm" VerticalAlignment="Top" FontFamily="Calibri" FontSize="24"/>
+        <TextBlock x:Name="Right_Arm" HorizontalAlignment="Left" Margin="800,24,0,0" TextWrapping="Wrap" Text="Right Arm" VerticalAlignment="Top" FontFamily="Calibri" FontSize="24" />
+        <Slider x:Name="leftShoulder" HorizontalAlignment="Left" Margin="45,119,0,0" VerticalAlignment="Top" Width="100" Maximum="180" LargeChange="60" SmallChange="5"  TickPlacement="BottomRight" Value="89" TickFrequency="15" ValueChanged="leftShoulder_ValueChanged"/>
+        <Slider x:Name="leftForearm" HorizontalAlignment="Left" Margin="45,246,0,0" VerticalAlignment="Top" Width="100"  Maximum="180" LargeChange="60" SmallChange="5"  TickPlacement="BottomRight" Value="89" TickFrequency="15" ValueChanged="leftForearm_ValueChanged"/>
+        <Slider x:Name="rightShoulder" HorizontalAlignment="Left" Margin="800,119,0,0" VerticalAlignment="Top" Width="100" Maximum="180" LargeChange="60" SmallChange="5"  TickPlacement="BottomRight" Value="89" TickFrequency="15" ValueChanged="rightShoulder_ValueChanged"/>
+        <Slider x:Name="rightForearm" HorizontalAlignment="Left" Margin="800,245,0,0" VerticalAlignment="Top" Width="100" Maximum="180" LargeChange="60" SmallChange="5"  TickPlacement="BottomRight" Value="89" TickFrequency="15" ValueChanged="rightForearm_ValueChanged"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="69,93,0,0" TextWrapping="Wrap" Text="Shoulder" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="72,223,0,0" TextWrapping="Wrap" Text="Forearm" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="827,93,0,0" TextWrapping="Wrap" Text="Shoulder" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="827,223,0,0" TextWrapping="Wrap" Text="Forearm" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

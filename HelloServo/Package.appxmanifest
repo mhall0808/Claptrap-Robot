@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp iot">
+<Package
+    xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+    xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+    xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10"
+         IgnorableNamespaces="uap mp iot">
+  
   <Identity Name="1bb9f0e1-e945-43ca-b352-d3d5598f09fc" Publisher="CN=Smoky Desperado" Version="1.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="1bb9f0e1-e945-43ca-b352-d3d5598f09fc" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
@@ -27,12 +33,11 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
-    <Capability Name="codeGeneration" />
-    <uap:Capability Name="musicLibrary" />
+    <iot:Capability Name="lowLevelDevices" />
+    <DeviceCapability Name="109b86ad-f53d-4b76-aa5f-821e2ddf2141" />
+
     <uap:Capability Name="objects3D" />
-    <uap:Capability Name="appointments" />
     <DeviceCapability Name="webcam" />
-    <DeviceCapability Name="location" />
-    <DeviceCapability Name="bluetooth" />
+    
   </Capabilities>
 </Package>
