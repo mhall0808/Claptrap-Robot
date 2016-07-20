@@ -26,6 +26,10 @@ AdaFriut NeoPixel ring
 Webcam
 Trash can
 
+##Design Overview
+Windows IOT Core has the capability to upload apps onto the Raspberry Pi quite nicely.  We decided to utilize this feature, along with the ability to remotely connect with the Pi through any computer, tablet or phone with Windows 10 Operating System on it.  We created a wireless access point through cell phone tethering, though through any router or WiFi adapter works just as well.  From there, we load up a simple User Interface, with a camera, four slider bars for each servo, and directional commands for the DC wheels.  From that interface, commands are issued to the Pi remotely, which then connect to each function that we need to have it do.
+
+
 ##Procedure
 1. The first thing that we did was gather the materials and ideas of functionality.  We started a list of materials needed for this project, and brainstorm of how we wanted claptrap to look like. Then, we had to decide whether or not Windows IOT Core was a viable option for the project; a few times, we nearly switched over to another Distro, but utimately we were able to make it work.
 
@@ -51,15 +55,15 @@ Trash can
 *  IOT Core at this time only has basic PWM support.  Therefore, it was necessary for us to simulate a PWM through creating pulses around a 20 ms wait time.  Fortunately, a 20ms pulse is easily viable for the Raspberry Pi; the NeoPixel ring turned out to function on several hundred MHz, which was why we decided to use the Arduino as a standalone to power the device.
 
  4. Creating the robot body
-   * We did not start out our project with a pre-created design.  Instead, we settled on creating one ourselves... for better or for worse.  This of course posed many challenges, but I feel that in the end we were able to have a very unique learning experience from the whole ordeal.  Once again, this was something that I had very little experience with, and we sort of learned as we went along.  I purchased a Dremel to create incisions, and it was possibly one of the best choices I could have made; the Dremel tools work perfectly with smaller parts such as robotics, and it definitely expedited the building process significantly.
-   * For the outer shell design:
-      *We started with a plastic 3lb trash can, then we drew out the parts that we wanted to cut out 
-      *Mark cut out the pieces on the trash can and sprayed it with a silver spray paint as the first layer then clear as the second and finishing it off with yellow and white as the outer color to match the color of claptrap
-Pao started trying to figure out how to put all the pieces together and how the wheels were going to go on the body
-Pao started to cut different parts from old art paintings and wooden dials 
-Those parts were then used as the inner skeleton structure to hold the wheels and all the parts together
-We then hot glued and zip tied the all the pieces together, we also then decided to have different layers within claptrap so we could have it organized and be able to move things around and replace parts as needed
-We put all the wires on the lower level and the main components on the top, this made it so that we can get to the raspberry pi easily and the battery pack
+  * We did not start out our project with a pre-created design.  Instead, we settled on creating one ourselves... for better or for worse.  This of course posed many challenges, but I feel that in the end we were able to have a very unique learning experience from the whole ordeal.  Once again, this was something that I had very little experience with, and we sort of learned as we went along.  I purchased a Dremel to create incisions, and it was possibly one of the best choices I could have made; the Dremel tools work perfectly with smaller parts such as robotics, and it definitely expedited the building process significantly.
+  * For the outer shell design:
+      * We started with a plastic 3lb trash can, then we drew out the parts that we wanted to cut out 
+      * Mark cut out the pieces on the trash can and sprayed it with a silver spray paint as the first layer then clear as the second and finishing it off with yellow and white as the outer color to match the color of claptrap
+      * Pao started trying to figure out how to put all the pieces together and how the wheels were going to go on the body
+      * Pao started to cut different parts from old art paintings and wooden dials 
+      * Those parts were then used as the inner skeleton structure to hold the wheels and all the parts together
+      * We then hot glued and zip tied the all the pieces together, we also then decided to have different layers within claptrap so we could have it organized and be able to move things around and replace parts as needed
+      * We put all the wires on the lower level and the main components on the top, this made it so that we can get to the raspberry pi easily and the battery pack
 
 
 
